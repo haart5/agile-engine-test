@@ -1,0 +1,15 @@
+{
+  "name": "agile-engine-dev-mffp",
+  "version": "1.0.0",
+  "description": "Technical test for Agile Engine",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd mffp-frontend && npm run dev",
+    "start:backend": "cd mffp-backend && npm run start",
+    "install:all": "concurrently \"npm run install:frontend\" \"npm run install:backend\"",
+    "install:frontend": "cd mffp-frontend && npm install",
+    "install:backend": "cd mffp-backend && npm install"
+  },
+  "author": "Arturo Martinez",
+  "license": "ISC"
+}
